@@ -22,7 +22,16 @@ def usage_guide_page():
     )
 
     st.info(
-        f"3. **Cherry Leaf Visualiaser page**\n\n"
+        f"3. **Project Hypothesis page**\n\n"
+        f"This section serves as a concise yet comprehensive overview of "
+        f"the machine learning project, outlining its anticipated results. "
+        f"It holds particular value for stakeholders, business proprietors,"
+        f"executives, and managers vested in making strategic "
+        f"determinations predicated on the project's eventual outcomes."
+    )
+
+    st.info(
+        f"4. **Cherry Leaf Visualiaser page**\n\n"
         f"On this page, you can closely examine the visual distinctions "
         f"between healthy cherry leaves and those affected by powdery "
         f"mildew infection. Discover the visual indicators that "
