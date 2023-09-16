@@ -34,7 +34,7 @@ ___
 - Agile with Kanban is chosen for project management to promote flexibility, adaptability, and efficient issue tracking throughout the project's lifecycle.
 - Find the Kanban board Project [here.](https://github.com/users/CBergane/projects/8)
 
-![kanban](assets/readme_images/kanban_project.jpeg)
+![kanban](assets/readme_images/kanban_project.png)
 
 
 ## Crisp-DM: Definition and Usage
@@ -49,7 +49,7 @@ CRISP-DM (Cross-Industry Standard Process for Data Mining) is a structured appro
 6. **Deploy:** Implement the chosen model into production.
 7. **Monitor:** Continuously track and maintain model performance.
 
-![crips-dm](assets/readme_images/kanban_project.jpeg)
+![crips-dm](assets/readme_images/crisp_dm.png)
 
 
 ## Business Requirements
@@ -117,3 +117,6 @@ As a client, I can access pages containing the findings from the project's conve
 The dataset consists of labeled image data divided into two folders, with each folder representing a specific image label. Specifically, images of healthy leaves are located in the "healthy" directory, while images of leaves with powdery mildew are stored in the "powder_mildew" directory.
 
 In total, the classification dataset comprises 4,208 records, evenly split between 2,104 images of healthy leaves and 2,104 images of infected leaves. This balanced dataset ensures equal representation of both classes for effective model training and evaluation.
+
+---
+
