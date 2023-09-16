@@ -25,7 +25,9 @@ def project_overview_page():
     st.write(
         f"* For more details about the dataset and how we prepared it, "
         f"check out the [README file]"
-        f"(https://github.com/Edmir-Demaj/mildew-detection-in-cherry-leaves/blob/main/README.md)")
+        f"(https://github.com/Edmir-Demaj/mildew-detection-in-cherry-leaves/"
+        f"blob/main/README.md)"
+    )
 
     st.success(
         f"**Business Goals:**\n"
