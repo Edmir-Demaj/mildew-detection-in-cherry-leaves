@@ -33,14 +33,20 @@ def make_prediction(my_image, version):
     if predicted_class == target_map[0]:
         prediction_probability = 1 - prediction_probability
 
-    statement = "The predictive analysis indicates the cherry leaf"
+    statement = "* The machine learning model indicates the Cherry leaf"
 
     if predicted_class.lower() == 'healthy':
-        statement = f"{statement} is **{predicted_class.lower()}**"
+        st.markdown('<span style="background-color:#c2ffc1; padding: 10px;">'
+                    f"The ML model indicates that the Cherry leave prediction"
+                    f" is: **{predicted_class.lower()}**."
+                    '</span>',
+                    unsafe_allow_html=True)
     else:
-        statement = f"{statement} has **powdery mildew**."
-  
-    st.write(statement)
+        st.markdown('<span style="background-color:#ffc1c1; padding: 10px;">'
+                    f"The ML model indicates that the Cherry leave prediction"
+                    f" is: **{predicted_class.lower()}**."
+                    '</span>',
+                    unsafe_allow_html=True)
         
     return prediction_probability, predicted_class
 
