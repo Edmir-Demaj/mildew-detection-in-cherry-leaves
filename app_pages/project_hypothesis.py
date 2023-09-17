@@ -22,7 +22,7 @@ def project_hypothesis_page():
 
     st.write(
         f"To visually study features of infected and healthy leaves "
-        f"visit the **Cherry Leaf Visualiser** page.")
+        f"visit the **Cherry Leaf Visualizer** page.")
 
     st.write("### Hypotesis 2 and validation")
 
@@ -63,7 +63,7 @@ def project_hypothesis_page():
     )
 
     st.write(
-        f"To study the model performance metrics visit the "
+        f"To check ML model performance visit the "
         f"**Powdery Mildew Detection** page.")
 
     st.write("### Hypotesis 4 and validation")
