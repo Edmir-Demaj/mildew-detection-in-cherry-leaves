@@ -63,3 +63,34 @@ def usage_guide_page():
         f"- Choose the label you want to study from the dropdown menu.\n"
         f"- Click the **Create Montage** button."
     )
+
+    st.info(
+        f"5. **Powdery Mildew Detection page**\n\n"
+        f"This page allows you to upload an image of a Cherry leaf and predict"
+        f" whether it has powdery mildew disease or it is healthy. To use "
+        f"this feature, click on the **Browse files** button and select an "
+        f"image from your local machine. Once Upload is finished the page will"
+        f" display the prediction result with a confidence score. You can"
+        f" also view predicted probabilities for the input image across "
+        f"different classes."
+    )
+
+    st.success(
+        f"**Step by step**\n\n"
+        f"1. Open the Streamlit dashboard in a web browser.\n"
+        f"2. Navigate to the *Powdery Mildew Detection* page by clicking on "
+        f"the corresponding tab in the left sidebar menu.\n"
+        f"3. Click on the **Browse files** button and select an image or "
+        f"more from your local machine and upload it without any "
+        f"complications. You can use the drag and drop feature aswell.\n"
+        f"4. Predictions will appear below. Read the prediction result or "
+        f"study the features and metrics as required. To read the prediction "
+        f"result, the user should look for the predicted class and the "
+        f"corresponding confidence score. For example, if the predicted class "
+        f"is **powdery mildew** and the confidence score is 0.85, it means "
+        f"that the model is 85 % confident that the input image has powdery "
+        f"mildew disease.\n"
+        f"5. If needed, you can scroll through the predictions and check where"
+        f" the model was uncertain and make a correct decision yourself.\n"
+        f"6. Download a prediction report at the bottom of the page."
+    )
