@@ -16,11 +16,12 @@ def ml_performance_page():
              caption="Data distribution for Train, Validation and Test sets")
     st.info(
         f"* The original dataset has a total of 4208 image data files. "
-        f"This dataset contains 2104 image files labelled **healthy** " 
+        f"This dataset contains 2104 image files labelled **healthy** "
         f"and 2104 image files labelled **powdery_mildew.**\n\n"
         f"* The dataset was split into Train, Validation and Test set in "
         f"the ratio 0.7, 0.1 and 0.2 respectively."
-    )     
+    )
+
     st.write('---')
 
     st.write("### Train, Validation and Test set: Label Frequencies")
@@ -38,6 +39,7 @@ def ml_performance_page():
         f"distinguish between the two classes equally well and avoids "
         f"bias towards one class. "
     )
+
     st.write("---")
 
     st.write("### Model History")
