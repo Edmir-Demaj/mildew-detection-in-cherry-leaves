@@ -6,7 +6,7 @@ from datetime import datetime
 import joblib
 
 
-def download_dataframe_as_csv(df: pd.DataFrame) -> str:
+def download_df_as_csv(df: pd.DataFrame) -> str:
     '''
     Download generated DataFrame of classification report as a
     time-stamped .csv file
