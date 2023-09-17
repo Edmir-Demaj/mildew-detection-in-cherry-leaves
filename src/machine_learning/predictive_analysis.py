@@ -9,20 +9,21 @@ from src.data_management import load_pkl_file
 
 def resize_input_image(img, version):
     """
-    Resize image to average image size
+    Resize image to average image shape
     """
     image_shape = load_pkl_file(
-        file_path=f"outputs/{version}/image_shape.pkl")
-    img_resized = img.resize((image_shape[1], image_shape[0]), Image.ANTIALIAS)
+        file_path=f"outputs/{version}/av_image_shape.pkl")
+    img_resized = img.resize(
+        (image_shape[1], image_shape[0]), Image.Resampling.LANCZOS)
     return np.expand_dims(img_resized, axis=0)/255
 
 
 def make_prediction(my_image, version):
     """
-    Load and perform ML prediction over images provided
+    Load and perform ML prediction over images provided when upload
     """
 
-    model = load_model(f'outputs/{version}/mildew_detector_model.h5')
+    model = load_model(f'outputs/{version}/best_ml_model.h5')
     prediction_probability = model.predict(my_image)[0, 0]
     predictions_labels = {'healthy': 0, 'powdery_mildew': 1}
 
