@@ -1,8 +1,8 @@
 # Powdery Mildew Detection in Cherry Leaves (ML project)
 
-![mockup](readme_images/mockup.png)
+![mockup](assets/readme_images/mockup.png)
 
-Live application is available [here](https://pm-detector.herokuapp.com/).
+Live application is available [here.](https://ml-mildew-detection-8675ca112542.herokuapp.com/)
 
 This project employs data science and machine learning to detect powdery mildew on cherry leaves, distinguishing between healthy and diseased ones. It features a binary classification machine learning model accessible via a Streamlit dashboard for leaf health prediction. Additionally, the project includes traditional data analysis findings, detailed hypothesis examination, and model performance evaluation.
 
@@ -24,7 +24,8 @@ ___
   - [Dataset Content](#dataset-content)
   - [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
   - [Data Understanding](#data-understanding)
-
+- [Project Execution Phase](#project-execution-phase)
+  - [Data Preparation](#data-preparation)
 ---
 
 # Planning Phase
@@ -32,7 +33,7 @@ ___
 ## Agile methodology - Development
 
 - Agile with Kanban is chosen for project management to promote flexibility, adaptability, and efficient issue tracking throughout the project's lifecycle.
-- Find the Kanban board Project [here.](https://github.com/users/CBergane/projects/8)
+- Find the Kanban board Project [here.](https://github.com/users/Edmir-Demaj/projects/9)
 
 ![kanban](assets/readme_images/kanban_project.png)
 
@@ -120,3 +121,8 @@ In total, the classification dataset comprises 4,208 records, evenly split betwe
 
 ---
 
+# Project Execution Phase
+
+## Data Preparation
+Minimal data cleaning was required, and the folders were scanned through to delete any non-image files. The dataset was split into the train, test and validation sets to perform model training and avoid model overfitting adequately. The split ratio of the dataset was 0.7, 0.2, and 0.1, respectively.
+Data augmentation was performed using ImageDataGenerator on the training dataset to increase the image data by artificially and temporarily creating training images through the combination of different processes, such as random rotation, shifts, sheared, zoom and rotated images in the computer's short-term memory (RAM). ImageDataGenertor was also used to rescale the test dataset and validation dataset.
