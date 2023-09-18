@@ -6,6 +6,10 @@ from src.machine_learning.evaluate_clf import load_test_evaluation
 
 
 def ml_performance_page():
+    """
+    Developes the ML Performance metrics page on Streamlit
+    dashboard providing content and funcionality.
+    """
     version = 'V_1'
     output_dir = f"outputs/{version}/"
 

@@ -13,6 +13,10 @@ from matplotlib.image import imread
 
 
 def leaf_visualizer_page():
+    """
+    Developes the Cherry leaf visualizer page on Streamlit
+    dashboard providing content and funcionality.
+    """
     version = 'V_1'
     output_dir = f"outputs/{version}"
 
@@ -27,9 +31,9 @@ def leaf_visualizer_page():
         f" powdery coating. The most noticeable sign is white or greyish marks"
         f" on leaves, often irregular blotches or spots.\n\n"
         f"For effective feature extraction and neural network training with"
-        f" image datasets proper image preprocessing is vital."
+        f" image datasets proper image preprocessing is vital. "
         f"This is especially critical when analyzing powdery mildew on leaves."
-        f"Normalizing the images in the dataset is crucial before training a "
+        f" Normalizing the images in the dataset is crucial before training a "
         f"Neural Network. By calculating the mean and standard deviation of "
         f"the entire dataset and taking into account the visual properties of "
         f"the powdery mildew on the leaf, we can enable the machine "

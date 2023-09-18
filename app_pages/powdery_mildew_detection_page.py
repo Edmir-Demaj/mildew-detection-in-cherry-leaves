@@ -11,7 +11,10 @@ from src.machine_learning.predictive_analysis import (
 
 
 def powdery_mildew_detection_page():
-
+    """
+    Developes the Mildew detection page on Streamlit
+    dashboard providing content and funcionality.
+    """
     st.info(
         f"In this platform, you have the opportunity to "
         f"submit high-resolution images of Cherry leaves for "
@@ -33,6 +36,8 @@ def powdery_mildew_detection_page():
                                            'jpeg', 'bmp', 'webp'],
                                      accept_multiple_files=True)
 
+    # Upload image files, resize it and run ml model to
+    # make prdiction for image data uploaded.
     if images_buffer is not None:
         df_report = pd.DataFrame([])
         for image in images_buffer:
@@ -53,7 +58,8 @@ def powdery_mildew_detection_page():
             df_report = df_report.append({"Name": image.name,
                                           'Result': pred_class},
                                          ignore_index=True)
-
+                                         
+        # Display analysis report and download option
         if not df_report.empty:
             st.success("Analysis Results Report")
             st.table(df_report)

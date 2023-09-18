@@ -3,6 +3,11 @@ import matplotlib.pyplot as plt
 
 
 def usage_guide_page():
+    """
+    Developes the Usage Guide page on Streamlit
+    dashboard providing content and funcionality.
+    """
+
     st.write("### Navigating and utilizing the Dashboard effectively.")
 
     st.info(
@@ -96,8 +101,9 @@ def usage_guide_page():
     )
 
     st.info(
-        f"6. *ML Performance Metrics:* This page provides the evaluation "
-        f"metrics of the machine learning model used in the project. The user "
+        f"6. **ML Performance Metrics page**\n\n"
+        f"This page provides the evaluation metrics of "
+        f"the machine learning model used in the project. The user "
         f"can view the confusion matrix, precision, recall, and F1 score of "
         f"the model. The user can also study the metrics to understand the "
         f"performance of the model. It is primarily intended for technical "

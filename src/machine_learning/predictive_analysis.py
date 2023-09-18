@@ -47,7 +47,7 @@ def make_prediction(my_image, version):
                     f" is: **{predicted_class.lower()}**."
                     '</span>',
                     unsafe_allow_html=True)
-        
+
     return prediction_probability, predicted_class
 
 

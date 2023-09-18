@@ -2,6 +2,10 @@ import streamlit as st
 
 
 def project_hypothesis_page():
+    """
+    Developes the Project Hypothesis page on Streamlit
+    dashboard providing content and funcionality.
+    """
     st.write("### Hypotesis 1 and validation")
 
     st.success(

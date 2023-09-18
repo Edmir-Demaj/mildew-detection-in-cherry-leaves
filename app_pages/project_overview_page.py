@@ -3,6 +3,10 @@ import matplotlib.pyplot as plt
 
 
 def project_overview_page():
+    """
+    Developes the Project overview page on Streamlit
+    dashboard providing content and funcionality.
+    """
     st.write("## Project Overview")
 
     st.info(
