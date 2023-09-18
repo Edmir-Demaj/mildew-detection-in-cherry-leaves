@@ -94,3 +94,14 @@ def usage_guide_page():
         f" the model was uncertain and make a correct decision yourself.\n"
         f"6. Download a prediction report at the bottom of the page."
     )
+
+    st.info(
+        f"6. *ML Performance Metrics:* This page provides the evaluation "
+        f"metrics of the machine learning model used in the project. The user "
+        f"can view the confusion matrix, precision, recall, and F1 score of "
+        f"the model. The user can also study the metrics to understand the "
+        f"performance of the model. It is primarily intended for technical "
+        f"staff members who are responsible for building and refining the ML "
+        f"model, but may also be relevant for other stakeholders who are "
+        f"interested in understanding the technical performance of project."
+    )
