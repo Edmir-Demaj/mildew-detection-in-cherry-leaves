@@ -29,6 +29,20 @@ ___
   - [Modeling](#modeling)
   - [Evaluation](#evaluation)
   - [Dashboard Design](#dashboard-design)
+  - [Bugs and Fixes](#bugs-and-fixes)
+  - [Manual Testing](#manual-testing)
+  - [Features for future implementation](#features-for-future-implementation)
+  - [Deployment](#deployment)
+    - [Heroku](#heroku)
+    - [Forking the GitHub Project](#forking-the-github-project)
+    - [Making a Local Clone](#making-a-local-clone)
+- [Summary](#summary)
+  - [Technologies Used](#technologies-used)
+    - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+    - [Other Frameworks, Libraries \& Programs Used](#other-frameworks-libraries--programs-used)
+  - [Credits](#credits)
+    - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 ---
 
 # Planning Phase
@@ -184,3 +198,112 @@ This app page also includes an image montage creation tool, where the user can s
 ![](assets/readme_images/metric_1.png)
 ![](assets/readme_images/metric_2.png)
 ![](assets/readme_images/metric_3.png)
+
+---
+
+## Bugs and Fixes
+
+While trying to deploy my project on Heroku, I ran into an issue related to the project's size, which exceeded the maximum allowable size of 500MB by 83MB, totaling 583MB. To address this challenge, I implemented a solution by adding specific files from the repository to the `.slugignore` file. By doing so, these files are excluded during the app's production build process, effectively reducing the overall application size and ensuring compatibility with Heroku's deployment constraints.
+
+___
+## Manual Testing
+
+| Instructions | Expected outcome | Results |  |  |
+|---|---|---|---|---|
+| Open link of deployed version | The app loads without errors with a Quick Project Overview Page as landing page. | Works as expected |  |  |
+| Navigate to the "Project Overview" page  | It provides an overview of the project, including a link to the project documentation `README.md file`, the problem statement, and the approach taken to solve the problem. | Works as expected |  |  |
+| Navigate to the "Usage Guide" page  | It provides step-by-step instructions and helpful tips to navigate and make the most of the features offered by the dashboard. | Works as expected |  |  |
+| Navigate to the "Project Hypothesis" page. | It provides a high-level summary of the ML project and its expected outcomes. | Works as expected |  |  |
+| Navigate to the "Cherry Leaf Visualizer" page | It provides a section description and three unchecked checkboxes. | Works as expected |  |  |
+| Navigate to the "Cherry Leaf Visualiser" page. Check the "Difference between average and variability image" checkbox. | A plot of the mean and variability of images appears along with the observation block. | Works as expected |  |  |
+| Navigate to the "Cherry Leaf Visualiser" page. Check the "Difference between average healthy and average powdery mildew cherry leaves" checkbox. | A plot of average healthy, average powdery mildew cherry leaves and the difference appears along with the observation block. | Works as expected |  |  |
+| Navigate to the "Cherry Leaf Visualiser" page. Tick the "Image Montage" checkbox. Choose a label from the dropdown menu and click on the button "Create Montage". | The Image Montage section appears, the dropdown menu functions correctly and the montage with the selected label is created. | Works as expected |  |  |
+| Navigate to the "Powdery Mildew Detection" page. | It allows the user to upload an image of a cherry leaf. | Works as expected |  |  |
+| Click on the "Browse files" button, select an image or a batch from the local machine, and will upload the image. | The prediction results are displayed on the page along with the confidence score. | Works as expected |  |  |
+| Download a prediction report at the bottom of the page. | A prediction report is available to download. | Works as expected |  |  |
+| Navigate to the "ML Performance Metrics" page. | It provides the evaluation metrics of the machine learning model used in the project. The confusion matrix, precision,  recall, and F1 score, ROC curve, training history of the model are available. | Works as expected |  |  |
+| Open deployed application in Safari, Chrome, and Firefox browsers | The app functions without errors, everything is displayed as wanted. | Works as expected,  except for the tab icon in Safari. |  |  |
+|  |  |  |  |  |
+
+## Features for future implementation
+
+1. User authentication.
+
+2. Feautures to allow user feedback on ML prediction.
+
+3. Automated tests.
+   
+---
+
+## Deployment
+
+### Heroku
+
+* The App live link is: https://ml-mildew-detection-8675ca112542.herokuapp.com/
+* The project was deployed on Heroku using the following steps.
+
+1. Log in to Heroku and create an App
+2. Log into Heroku CLI in the IDE workspace terminal using the bash command: `heroku login -i` and enter credentials.
+3. Run the command `git init` to re-initialise the Git repository
+4. Run the command `heroku git:remote -a YOUR_APP_NAME` to connect the workspace and your Heroku app.
+5. Set the app's stack to **heroku-20** using the bash command `heroku stack:set heroku-20` to provide compatibility with the Python 3.8.12 version used for this project.
+6. Use `git push heroku main` to deploy the application to Heroku.
+
+### Forking the GitHub Project
+To create a copy of the GitHub repository to modify and experiment with without affecting the original repository, one can fork the repository:
+
+* On the [repository](https://github.com/oks-erm/ML-mildew-detection) page, navigate to the `Fork` button on the top right corner of the page and click on it to create a copy of the repository which should then appear on your own GitHub account.
+
+### Making a Local Clone
+
+- On the [repository](https://github.com/Edmir-Demaj/mildew-detection-in-cherry-leaves) page, click on the `Code` button.
+* To clone the repository using HTTPS, copy the HTTPS URL.
+* Open the IDE of your choice and change the current working directory to the location where you want the cloned directory to be located.
+* Type `git clone` and paste the previously copied URL to clone the repository.
+
+# Summary
+
+## Technologies Used
+
+### Main Data Analysis and Machine Learning Libraries
+* [TensorFlow](https://www.tensorflow.org/overview) - version 2.6.0, used during image preprocessing to filter out corrupt images.
+* [Keras](https://keras.io/) - version 2.6.0 tuning of hyperparameters to find the best combination for model accuracy.
+* [Joblib](https://pypi.org/project/joblib/) - version 1.2.0 for saving and loading image shape.
+* [Numpy](https://numpy.org/) - version 1.19.2 for array manipulation.
+* [Pandas](https://pandas.pydata.org/) - version 1.1.2 for structuring the data.
+* [Matplotlib](https://matplotlib.org/) version 3.3.1 for creating charts and plots for data visualization.
+* [Seaborn](https://seaborn.pydata.org/) version 0.11.0, used in conjunction with Matplotlib for data visualization.
+* [Plotly](https://plotly.com/) - version 4.12.0 for plotting charts for data visualization.
+* [Streamlit](https://streamlit.io/) version 0.85.0 for dashboard development.
+* [Scikit-learn](https://scikit-learn.org/stable/) - version 0.24.2 for data processing.
+* [Jupyter notebook](https://jupyter.org) - used for writing and running the ML pipelines 
+
+### Other Frameworks, Libraries & Programs Used
+* [Git](https://git-scm.com/) - used for version control.
+* [GitHub:](https://github.com/) - used to store the projects code after being pushed from Git.
+* [Heroku](https://www.heroku.com/) - Deployment platform for the project.
+* [CodeAnywhere](https://app.codeanywhere.com/) - CodeAnywhere was used for development of the project, IDE.
+* [AmIResponsive](http://ami.responsivedesign.is/) - Used to generate responsive image used in README file.
+
+## Credits 
+
+* Code Institute Malaria Detector Walkthrough Project was used for instructional purposes, and guidance throughout the development of this project. For reference and organisation of the app, codes were used to implement the functionalities of the project. [Github site](https://github.com/GyanShashwat1611/WalkthroughProject01/)
+
+*  Dataset is from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves)
+
+* [Streamlit documentation](https://docs.streamlit.io/) was used for deeper understanding and troubleshooting.
+
+* [Keras Tuner documentation](https://keras.io/keras_tuner/) was used for deeper understanding and troubleshooting.
+
+* [oks-erm/ML-mildew-detection](https://github.com/oks-erm/ML-mildew-detection) used for reference.
+
+* [Hyperparameter tuning with Keras Tuner](https://blog.tensorflow.org/2020/01/hyperparameter-tuning-with-keras-tuner.html) to learn about hyperparameter tuning.
+
+### Media
+* The app icon is taken from [Icons8](https://icons8.com/).
+* Background image is taken from [Pexels](https://www.pexels.com/).
+
+## Acknowledgements
+* I would like to send acknowledgements to my mentor Marcel Mulders
+* [Oksana Erm](https://github.com/oks-erm) for brainstorming and sharing her experience.
+
