@@ -19,13 +19,16 @@ ___
   - [Agile methodology - Development](#agile-methodology---development)
   - [Crisp-DM: Definition and Usage](#crisp-dm-definition-and-usage)
   - [Business Requirements](#business-requirements)
-  - [**Hypothesis and Validation**](#hypothesis-and-validation)
+  - [Hypothesis and Validation](#hypothesis-and-validation)
 - [Data Gathering Phase](#data-gathering-phase)
   - [Dataset Content](#dataset-content)
   - [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
   - [Data Understanding](#data-understanding)
 - [Project Execution Phase](#project-execution-phase)
   - [Data Preparation](#data-preparation)
+  - [Modeling](#modeling)
+  - [Evaluation](#evaluation)
+  - [Dashboard Design](#dashboard-design)
 ---
 
 # Planning Phase
@@ -63,7 +66,7 @@ To save time, the IT team suggested an ML system that can detect instantly, usin
 - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 - 3 - The client wants a dashboard that meets the above requirements.
 
-## **Hypothesis and Validation**
+## Hypothesis and Validation
 
 - **Hypothesis one**
   - It is possible to visually differentiate a healthy cherry leaf from one with powdery mildew using machine learning.
@@ -91,6 +94,7 @@ To save time, the IT team suggested an ML system that can detect instantly, usin
     
 * The dataset is sourced from Kaggle. We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 * The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
+* [Link to Kaggle dataset.](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)
 
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
 
@@ -126,3 +130,31 @@ In total, the classification dataset comprises 4,208 records, evenly split betwe
 ## Data Preparation
 Minimal data cleaning was required, and the folders were scanned through to delete any non-image files. The dataset was split into the train, test and validation sets to perform model training and avoid model overfitting adequately. The split ratio of the dataset was 0.7, 0.2, and 0.1, respectively.
 Data augmentation was performed using ImageDataGenerator on the training dataset to increase the image data by artificially and temporarily creating training images through the combination of different processes, such as random rotation, shifts, sheared, zoom and rotated images in the computer's short-term memory (RAM). ImageDataGenertor was also used to rescale the test dataset and validation dataset.
+
+## Modeling
+
+The sequential model employed for training was utilized to iteratively optimize its parameters and performance on the training dataset. To ensure its effectiveness and generalization, the model was rigorously assessed and fine-tuned using the validation dataset.
+
+Following the training and validation phases, the refined model was leveraged to make predictions on the previously unseen test dataset. To gauge its predictive prowess, we computed performance metrics, specifically the Accuracy, to assess how well the model performed on this independent dataset.
+
+## Evaluation
+
+The model accuracy on the test dataset is 100% which is above the required accuracy percentage. For further tests, manually we uploaded two Cherry leaves (healthy and infeccted leaves shown under sample data above). This two images data were not part of the dataset but were taken from Google. Once uploaded they were adequately predicted.
+
+[Healthy Leaf](assets/readme_images/healthy_sample.png)
+
+[Infected Leaf](assets/readme_images/infected_sample.png)
+
+---
+## Dashboard Design
+
+1. ***Project Overview*** This page gives you a clear picture of the project and its purpose. It covers details about the dataset used, breaks down the problem we're addressing, and explains the step-by-step the plan we've created to successfully handle and solve the challenge at hand.
+
+![](assets/readme_images/project_overview.png)
+![](assets/readme_images/project_overview_1.png)
+
+1. ***Usage Guide*** page provides step-by-step instructions and helpful tips to navigate and make the most of the features offered by the dashboard. It ensures a smooth and effective user experience, enabling you to fully harness the dashboard's capabilities.
+
+![](assets/readme_images/usage_guide.png)
+![](assets/readme_images/usage_guide_2.png)
+![](assets/readme_images/usage_guide_3.png)
