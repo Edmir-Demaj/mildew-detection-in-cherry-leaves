@@ -153,8 +153,34 @@ The model accuracy on the test dataset is 100% which is above the required accur
 ![](assets/readme_images/project_overview.png)
 ![](assets/readme_images/project_overview_1.png)
 
-1. ***Usage Guide*** page provides step-by-step instructions and helpful tips to navigate and make the most of the features offered by the dashboard. It ensures a smooth and effective user experience, enabling you to fully harness the dashboard's capabilities.
+2. ***Usage Guide*** page provides step-by-step instructions and helpful tips to navigate and make the most of the features offered by the dashboard. It ensures a smooth and effective user experience, enabling you to fully harness the dashboard's capabilities.
 
 ![](assets/readme_images/usage_guide.png)
 ![](assets/readme_images/usage_guide_2.png)
 ![](assets/readme_images/usage_guide_3.png)
+
+3. ***Project Hypothesis*** page serves as a concise yet comprehensive overview of the machine learning project, outlining its anticipated results. It holds particular value for stakeholders, business proprietors,executives, and managers vested in making strategic determinations predicated on the project's eventual outcomes.
+
+![](assets/readme_images/hypothesis_1.png)
+![](assets/readme_images/hypothesis_2.png)
+
+4. ***Cherry Leaf Visualizer*** page you can closely examine the visual distinctions between healthy cherry leaves and those affected by powdery mildew infection. Discover the visual indicators that characterize the presence of powdery mildew.
+
+![](assets/readme_images/cherry_visualizer.png)
+![](assets/readme_images/diff_visualizer.png)
+![](assets/readme_images/diff_avg.png)
+
+This app page also includes an image montage creation tool, where the user can select a class of a label for which to display a montage generated via a graphical presentation of random validation set images.
+
+![](assets/readme_images/image_montage.png)
+
+5. ***Powdery Mildew Detection*** page allows you to upload an image of a Cherry leaf and predict whether it has powdery mildew disease or it is healthy. To use this feature, click on the Browse files button and select an image from your local machine. Once Upload is finished the page will display the prediction result with a confidence score. You can also view predicted probabilities for the input image across different classes.
+
+![](assets/readme_images/detection_page.png)
+![](assets/readme_images/detection_2.png)
+
+6. ***Ml Performance Metrics*** page provides the evaluation metrics of the machine learning model used in the project. The user can view the confusion matrix, precision, recall, and F1 score of the model. The user can also study the metrics to understand the performance of the model. It is primarily intended for technical staff members who are responsible for building and refining the ML model, but may also be relevant for other stakeholders who are interested in understanding the technical performance of project.
+
+![](assets/readme_images/metric_1.png)
+![](assets/readme_images/metric_2.png)
+![](assets/readme_images/metric_3.png)
