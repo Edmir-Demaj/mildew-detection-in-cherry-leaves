@@ -33,7 +33,8 @@ ___
   - [Manual Testing](#manual-testing)
   - [Features for future implementation](#features-for-future-implementation)
   - [Deployment](#deployment)
-    - [Heroku](#heroku)
+    - [Setup Workspace](#setup-workspace)
+    - [Heroku Deployment](#heroku-deployment)
     - [Forking the GitHub Project](#forking-the-github-project)
     - [Making a Local Clone](#making-a-local-clone)
 - [Summary](#summary)
@@ -49,7 +50,7 @@ ___
 
 ## Agile methodology - Development
 
-- Agile with Kanban is chosen for project management to promote flexibility, adaptability, and efficient issue tracking throughout the project's lifecycle.
+- Agile methodology, combined with the Kanban framework, is strategically employed for project management to enhance the project's overall effectiveness by fostering a dynamic and adaptive approach. This approach is particularly favored for its ability to ensure flexibility and adaptability, allowing a seamlessly address emerging challenges and opportunities as they arise. Additionally, the integration of Kanban enables precise and efficient tracking of project issues, facilitating real-time visibility into workflow processes and optimizing resource allocation for enhanced project outcomes.
 - Find the Kanban board Project [here.](https://github.com/users/Edmir-Demaj/projects/9)
 
 ![kanban](assets/readme_images/kanban_project.png)
@@ -153,7 +154,7 @@ Following the training and validation phases, the refined model was leveraged to
 
 ## Evaluation
 
-The model accuracy on the test dataset is 100% which is above the required accuracy percentage. For further tests, manually we uploaded two Cherry leaves (healthy and infeccted leaves shown under sample data above). This two images data were not part of the dataset but were taken from Google. Once uploaded they were adequately predicted.
+The model accuracy on the test dataset is 100% which is above the required accuracy percentage. For further tests, manually we uploaded two Cherry leaves (healthy and infeccted leaves shown under sample data above). This two images data were not part of the dataset but were taken from Pexels. Once uploaded they were adequately predicted.
 
 [Healthy Leaf](assets/readme_images/healthy_sample.png)
 
@@ -237,7 +238,16 @@ ___
 
 ## Deployment
 
-### Heroku
+### Setup Workspace
+The repository for this project was created off the [template](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves) provided by Code Institute and Codeanywhere workspace was used to develop this project.
+
+- Click the `Use This Template` button.
+- Add a repository name and brief description.
+- Click the `Create Repository from Template` to create your repository.
+- Click `Codeanywhere` to create a workspace.
+- To return to the current workspace, login to your Codeanywhere acoount and open the workspace created earlier, since clicking on CodeAnywhere button on the GitHub page creates a new workpspace each time.
+
+### Heroku Deployment
 
 * The App live link is: https://ml-mildew-detection-8675ca112542.herokuapp.com/
 * The project was deployed on Heroku using the following steps.
@@ -250,16 +260,16 @@ ___
 6. Use `git push heroku main` to deploy the application to Heroku.
 
 ### Forking the GitHub Project
-To create a copy of the GitHub repository to modify and experiment with without affecting the original repository, one can fork the repository:
+To create a copy of the GitHub repository to modify and experiment with it without affecting the original repository, you can fork the repository:
 
-* On the [repository](https://github.com/oks-erm/ML-mildew-detection) page, navigate to the `Fork` button on the top right corner of the page and click on it to create a copy of the repository which should then appear on your own GitHub account.
+* On the [repository](https://github.com/Edmir-Demaj/mildew-detection-in-cherry-leaves) page, navigate to the `Fork` button on the top right corner of the page and click on it to create a copy of the repository which should then appear on your own GitHub account.
 
 ### Making a Local Clone
 
 - On the [repository](https://github.com/Edmir-Demaj/mildew-detection-in-cherry-leaves) page, click on the `Code` button.
 * To clone the repository using HTTPS, copy the HTTPS URL.
 * Open the IDE of your choice and change the current working directory to the location where you want the cloned directory to be located.
-* Type `git clone` and paste the previously copied URL to clone the repository.
+* Type `git clone` on terminal and paste the previously copied URL to clone the repository.
 
 # Summary
 
@@ -280,30 +290,29 @@ To create a copy of the GitHub repository to modify and experiment with without 
 
 ### Other Frameworks, Libraries & Programs Used
 * [Git](https://git-scm.com/) - used for version control.
-* [GitHub:](https://github.com/) - used to store the projects code after being pushed from Git.
+* [GitHub:](https://github.com/) - used to store the project code after being pushed from Git.
 * [Heroku](https://www.heroku.com/) - Deployment platform for the project.
-* [CodeAnywhere](https://app.codeanywhere.com/) - CodeAnywhere was used for development of the project, IDE.
+* [Codeanywhere](https://app.codeanywhere.com/) - Codeanywhere was used for development of the project, IDE.
 * [AmIResponsive](http://ami.responsivedesign.is/) - Used to generate responsive image used in README file.
 
 ## Credits 
 
-* Code Institute Malaria Detector Walkthrough Project was used for instructional purposes, and guidance throughout the development of this project. For reference and organisation of the app, codes were used to implement the functionalities of the project. [Github site](https://github.com/GyanShashwat1611/WalkthroughProject01/)
+- Code Institute Malaria Detector Walkthrough Project was used for instructional purposes, and guidance throughout the development of this project. For reference and organisation of the app, codes were used to implement the functionalities of the project. [Malaria Detector Walkthrough Project](https://github.com/GyanShashwat1611/WalkthroughProject01/)
 
 *  Dataset is from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves)
 
-* [Streamlit documentation](https://docs.streamlit.io/) was used for deeper understanding and troubleshooting.
+* [Streamlit documentation](https://docs.streamlit.io/) was used for help on dashboard development.
 
 * [Keras Tuner documentation](https://keras.io/keras_tuner/) was used for deeper understanding and troubleshooting.
 
-* [oks-erm/ML-mildew-detection](https://github.com/oks-erm/ML-mildew-detection) used for reference.
+* [oks-erm/ML-mildew-detection](https://github.com/oks-erm/ML-mildew-detection) used for reference during development.
 
 * [Hyperparameter tuning with Keras Tuner](https://blog.tensorflow.org/2020/01/hyperparameter-tuning-with-keras-tuner.html) to learn about hyperparameter tuning.
 
 ### Media
 * The app icon is taken from [Icons8](https://icons8.com/).
-* Background image is taken from [Pexels](https://www.pexels.com/).
+* Background image and two cherry leaf samples werw taken from [Pexels](https://www.pexels.com/).
 
 ## Acknowledgements
-* I would like to send acknowledgements to my mentor Marcel Mulders
+* I would like to send acknowledgements to my mentor Marcel Mulders for his helpful advices.
 * [Oksana Erm](https://github.com/oks-erm) for brainstorming and sharing her experience.
-
